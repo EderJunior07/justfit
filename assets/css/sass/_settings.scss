@@ -1,0 +1,471 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.animation {
+    height: 350px;
+}
+
+.img-banner {
+    width: 100%;
+    min-height: 550px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.brand-img{
+    width: 100%;
+    min-height: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navbar-toggler {
+    color: #daf2ff;
+    //border-color: rgba(255,255,255,0.15);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(255,255,255,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.switcher-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+    .switcher {
+        padding-bottom: 6px;
+        .switcher-input:checked ~ .switcher-indicator {
+            background: $color-primary;
+            color: #fff;
+        }
+
+        .switcher-label {
+            text-transform: uppercase;
+            font-weight: 500;            
+        }
+    }
+
+
+}
+
+.box-app-download{
+    padding: 4rem !important;
+}
+
+.cards-smartfit {
+    min-width: 45vw;
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;     
+    z-index: 999; 
+    width: 100%;
+    
+    .container {
+        background-color: #4e5155;
+        color: #fff;
+        padding: 15px 25px; 
+        margin-bottom: 15px;   
+
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+
+    .container::before {
+        border-radius: 0 !important;
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -3;
+        //right: 9%;
+        top: 25px;
+        width: 100%;
+        margin-left: 25px;
+        max-width: 1114px;
+        height: 75%;
+        border: 5px solid #C9D200;
+    }
+
+    .group-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            margin-bottom: 10px;
+            min-width: 100px;
+        }
+
+        a {
+           color: #fff; 
+        }
+    }
+
+    .row {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    p {
+        margin: 0;
+    }
+
+    @media (max-width: 576px) {
+        .container {
+            margin-bottom: 0;
+        }
+
+        .group-buttons {
+            margin-top: 15px;
+            flex-direction: row;
+
+            button {
+                margin-bottom: 0px;
+                margin-right: 15px;                
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .switcher-group {
+        display: none;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .d-none-sm {
+        display: none !important;
+    }
+
+    .animation {
+        height: 250px;
+    }
+
+    .box-app-download{
+        padding: 2rem !important;
+    }
+
+    .cards-smartfit {
+        min-width: 84vw;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .cards-smartfit {
+        min-width: 81vw;
+    }
+
+}
+
+
+
+.bg-primary {
+    background-color: $color-primary !important;
+}
+
+a:hover {
+    color: $color-primary !important;    
+}
+.text-body[href]:hover {
+    color: $color-primary !important;    
+}
+
+.btn-search {
+    background-color: #202020 !important;
+    border-radius: 0 !important;
+    color: $color-light-theme !important;
+}
+
+.btn-know-more {
+    background-color: #202020 !important;
+    border-radius: 0 !important;
+    color: $color-light-theme !important;
+    width: 200px;
+    height: 60px;
+}
+
+.btn-know-more::before {
+    border-radius: 0 !important;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -3;
+    left: 5px;
+    top: 5px;
+    width: 100%;
+    height: 100%;
+    border: 5px solid $color-primary;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+
+.padding-default {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.padding-default-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padding-default-70 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.padding-default-bottom-top-dif {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.padding-default-right {
+    padding-right: 50px;
+}
+
+.bg-all-black {
+    background-color: #000000;
+}
+
+.title-down-line::before {
+    background-color: $color-primary;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 185px;
+    top: 50px;
+    width: 100px;
+    height: 5px;
+    font-size: 90px !important;
+}
+
+.primary-text-color {
+    color: $color-primary;
+}
+
+.title-down-line-2::before {
+    background-color: $color-primary;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 50px;
+    width: 100px;
+    height: 5px;
+    font-size: 90px !important;
+}
+
+.smartfit-bg {
+    position: absolute !important;
+    left: 30px;
+    top: 190px;
+    height: 550px;
+}
+
+.brand-img {
+    width: 135px;
+}
+
+.active.active-line::after {
+    position: relative;
+    content: "";
+    top: 7px;
+    left: 0px;
+    background-color: $color-primary;
+    width: 100%;
+    height: 3px;
+    display: flex;
+    z-index: 1px;
+}
+
+.active-line-effect::after {
+    position: relative;
+    content: "";
+    top: 25px;
+    left: 0px;
+    background-color: $color-primary;
+    width: 50%;
+    height: 3px;
+    display: flex;
+    z-index: 1px;
+}
+
+.card-smartfit-cta {
+    background: $color-light-theme;
+    border: 2px solid #f1f1f1;
+    min-height: 380px;
+}
+.card-smartfit-cta img {
+    width: 100%;
+}
+
+.card-smartfit-cta .cta-mark {
+    font-weight: 500;
+    color: #202020;
+    width: 85%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1em;
+    text-align: center;
+    align-self: flex-end;
+    display: block;
+    margin-top: -40px;
+    background-color: $color-primary;
+}
+.card-smartfit-cta .smartfit-card-title {
+    font-weight: 500;
+    color: $color-light-theme;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1em;
+    text-align: center;
+    background-color: #202020;
+}
+
+.card-smartfit-cta p {
+    font-weight: 500;
+    color: #000;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.box-app-download {
+    display: flex;
+    flex: 1;
+
+    /* border: 3px solid $color-primary; */
+    flex-direction: column;
+    /* max-height:400px; */
+}
+
+.box-app-download:after {
+    display: flex;
+    flex: 1;
+    border: 3px solid $color-primary;
+    flex-direction: column;
+    content: "";
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 440px;
+}
+
+.btn-cta {
+    background: $color-primary !important;
+    font-weight: 500 !important;
+    color: #202020 !important;
+}
+
+.btn-faq {
+    background: #202020 !important;
+    display: flex;
+    border-radius: 0px !important;
+    padding: 30px 30px !important;
+    width: 300px;
+    z-index: 1;
+    transition: 0.2s all ease-in;
+    position: relative;
+    left: -20px;
+    top: -16px;
+}
+
+.btn-faq:hover {
+    background: $color-primary !important;
+    transition: 0.2s all ease-in;
+    color: #202020 !important;
+}
+
+.btn-faq:hover span {
+    color: #202020 !important;
+}
+
+.text-color {
+    color: #202020;
+}
+
+.btn-faq span {
+    color: $color-light-theme;
+    z-index: 1;
+    letter-spacing: 1px !important;
+    font-size: 1.3em !important;
+    font-weight: 500 !important;
+    transition: 0.5s all;
+    font-family: "Gotham";
+    position: relative;
+    width: 100%;
+}
+
+.btn-faq-container {
+    position: relative;
+    border: 4px solid $color-primary;
+    width: 300px;
+    height: 90px;
+    transform: scale(0.8);
+}
+
+.text-btn-faq {
+    color: $color-light-theme;
+}
+
+.card-covid {
+    background: $color-primary;
+    min-height: 430px;
+    width: 100%;
+    color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 35px;
+}
+
+.card-covid p {
+    text-align: center;
+}
+
+.card-covid h5 {
+    text-align: center;
+}
+
+.form-adjust {
+    border: 1px solid #d1d1d1 !important;
+    padding: 10px !important;
+    border-radius: 0px !important;
+    padding: 25px !important;
+}
+
+select.form-adjust {
+    padding: 0 25px !important;
+    color: #c5c6c6;
+}
+
+textarea.form-adjust {
+    width: 100%;
+}
+

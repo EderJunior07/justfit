@@ -1,0 +1,55 @@
+//Colors
+$color-primary: rgb(201,201,0);
+$color-primary-hover: rgb(201,201,0);
+$color-secondary: rgb(0, 0, 0);
+$color-terdiary: rgb(229, 229, 229);
+$color-gray-100: rgb(80, 80, 80);
+$color-gray-70: rgb(119, 119, 119);
+$color-gray-10: rgb(237, 237, 237);
+$color-white: rgb(255, 255, 255);
+$color-white-ice: rgb(225, 225, 225);
+$color-blue: rgb(73, 112, 123);
+$color-yellow: rgb(216, 185, 55);
+$color-dark-yellow: rgb(180, 173, 80);
+$color-orange: rgb(215, 136, 37);
+$color-brown: rgb(157, 146, 139);
+$color-error: rgb(200, 90, 95);
+$color-box-veiculo-leve: rgb(64, 105, 121);
+$color-box-veiculo-pesado: rgb(167, 154, 149);
+$color-bg-rodape: rgb(43, 44, 45);
+
+//Light
+$color-light-theme: rgb(255, 255, 255);
+$color-light-font-bg-white: rgb(32, 32, 32);
+
+//Dark
+$color-dark-theme: rgb(0, 0, 0);
+$color-dark-font-bg-white: rgb(32, 32, 32);
+$color-dark-font-bg-dark: rgb(255, 255, 255);
+$color-dark-bg-soft: rgb(21, 21, 21);
+
+//Espace
+$espace-maximum: 4rem;
+$espace-medium: 2.5rem;
+$espace-minimum: 1.5rem;
+$espace-small: 1rem;
+
+//Font-Size
+$responsive: calc(16px + (24 - 16) * ((100vw - 600px) / (1200 - 600)));
+
+//Screen
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+$screen-xl: 1600px;
+
+//Shadown
+$shadow-10: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+$shadow-15: 0px 10px 15px -5px rgba(0, 0, 0, 0.15);
+$shadow-btn: 1px 1px 15px rgba($color-primary, 0.2);
+$shadow-btn-hover: 0px 10px 30px -10px rgba($color-primary, 0.3);
+
+//Border-radius
+$border-maximum: 40px;
+$border-medium: 20px;
+$border-minimum: 10px;

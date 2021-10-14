@@ -1,0 +1,171 @@
+body.dark{  
+    color: $color-dark-font-bg-dark !important;
+}
+
+.dark{  
+
+    nav {
+        .nav-link {                        
+            color: $color-dark-font-bg-dark !important;
+        }
+    }
+
+    .collapse-icon::after {
+      border-color: $color-dark-font-bg-dark;
+    }
+
+    .text-body {
+      color: $color-dark-font-bg-dark !important;
+    }
+
+    .img-banner {
+        background-image: url("../img/banner-dark.png");
+    }
+
+    .brand-img{
+        background-image: url("../img/logo-just.png");
+    }
+
+    .switcher-indicator{
+      background: rgb(50 50 50);
+      color: rgb(50 50 50);
+    }
+
+    .switcher-label {
+      color: $color-dark-font-bg-dark;
+    }
+    
+
+
+
+    .bg-theme{
+        background-color: $color-dark-theme;        
+    }
+
+    .bg-soft{
+        background-color: $color-dark-bg-soft;
+    }
+    
+    .btn-search {
+      background-color: #202020 !important;    
+      color:#FFF !important;
+    }
+    
+    .btn-know-more {
+      background: $color-white !important;   
+      color: $color-dark-font-bg-white !important
+    }
+
+    .btn-know-more:hover {
+      background: $color-primary !important;    
+      color: $color-dark-font-bg-white !important
+    }
+    
+    .btn-know-more::before {    
+      border-color: $color-primary;    
+    }
+    
+ 
+    
+    .bg-all-black {
+      background-color: #000000;
+    }
+    
+    .title-down-line::before {
+      background-color: $color-primary;    
+    }
+    
+    .primary-text-color {
+      color: $color-primary;
+    }
+    
+    .title-down-line-2::before {
+      background-color: $color-primary;        
+    }
+      
+    .active.active-line::after {    
+      background-color: $color-primary;    
+    }
+    
+    .active-line-effect::after {    
+      background-color: $color-primary;    
+    }
+    
+    .card-smartfit-cta{
+      background:#202020; 
+      border-color: #202020; 
+
+      .smartfit-card-title{    
+        color: $color-dark-font-bg-white;    
+        background-color: $color-primary;
+      }
+
+      p {
+        color: $color-dark-font-bg-dark;
+      }
+    }  
+    
+    
+    .card-smartfit-cta .cta-mark{   
+      color:#202020; 
+      background-color:$color-primary;
+    }
+    
+    
+    
+    
+    .box-app-download:after {    
+      border-color: $color-primary;    
+    }
+    
+    
+    
+    .btn-cta{
+      background:$color-primary !important;    
+      color:#202020 !important;  
+    }    
+    
+    .btn-faq {
+      background: $color-white !important;   
+      color: $color-dark-font-bg-white !important
+    }
+    
+    .btn-faq:hover {
+      background: $color-primary !important;    
+      color: $color-dark-font-bg-white !important
+    }
+    
+    .btn-faq:hover span {
+      color: #202020 !important
+    }
+    
+    .text-color{
+      color: $color-dark-font-bg-dark !important;
+    }
+    
+    .btn-faq span {
+      color: $color-dark-font-bg-white !important 
+    }
+    
+    .btn-faq-container{    
+      border-color: $color-primary;    
+    }
+    
+    .text-btn-faq {
+      color: #fff;
+    }
+    
+    .card-covid{
+      background: $color-primary;    
+    }  
+    
+    .form-adjust {
+      border-color: transparent !important;    
+      background-color: $color-dark-bg-soft;
+      color: #fff !important;
+    }
+
+    select.form-adjust {        
+        color: #c5c6c6 !important;
+    }
+  }

@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" class="light-style">
+
+<head>
+  <title>Justfit - Vem Pra Smart</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="description" content="Academia Smart Fit - A rede de academias Smart Fit tem como propósito democratizar o acesso à prática de atividade física de alto padrão, com planos acessíveis e adesão facilitada.">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">  
+
+
+  <link rel="apple-touch-icon" type="image/png" href="assets/img/apple-icon-57x57-2947bd46.png" size="57x57" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/img/apple-icon-60x60-e74d7ff9.png" size="60x60" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/img/apple-icon-72x72-b7e3603f.png" size="72x72" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/img/apple-icon-76x76-c9f76145.png" size="76x76" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/img/apple-icon-114x114-8cecb0a5.png" size="114x114" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/img/apple-icon-120x120-73d054bb.png" size="120x120" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/img/apple-icon-144x144-41b9c378.png" size="144x144" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/img/apple-icon-152x152-cebb5d54.png" size="152x152" />
+  <link rel="apple-touch-icon" type="image/png" href="assets/img/apple-icon-180x180-6ead1a18.png" size="180x180" />
+  
+  <link rel="icon" type="image/png" href="assets/img/android-icon-192x192-3165d36c.png" size="192x192" />  
+  <link rel="icon" type="image/png" href="assets/img/favicon-16x16-4cb0cc0e.png" size="16x16" />
+  <link rel="icon" type="image/png" href="assets/img/favicon-32x32-57ad5305.png" size="32x32" />
+  <link rel="icon" type="image/png" href="assets/img/favicon-96x96-02d682e5.png" size="96x96" />
+
+
+  <!-- Icon fonts -->
+  <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/open-iconic.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/gotham.css">
+
+  <!-- Core stylesheets -->
+  <link rel="stylesheet" href="assets/vendor/css/rtl/bootstrap.css" class="theme-settings-bootstrap-css">
+  <link rel="stylesheet" href="assets/vendor/css/rtl/appwork.css" class="theme-settings-appwork-css">
+  <!-- <link rel="stylesheet" href="assets/vendor/css/rtl/theme-corporate.css" class="theme-settings-theme-css"> -->
+  <link rel="stylesheet" href="assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
+  <link rel="stylesheet" href="assets/vendor/css/rtl/uikit.css">
+  <link rel="stylesheet" href="assets/vendor/css/animate.css">
+  <link rel="stylesheet" href="assets/css/demo.css">
+  <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
+  <link rel="stylesheet" href="assets/css/style.min.css">
+
+
+  <!-- Load polyfills -->
+  <script src="assets/vendor/js/polyfills.js"></script>
+  <script>document['documentMode'] === 10 && document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=Intl.~locale.en"><\/script>')</script>
+
+  <script src="assets/vendor/js/material-ripple.js"></script>
+  <script src="assets/vendor/js/layout-helpers.js"></script>
+
+  <!-- Core scripts -->
+  <script src="assets/vendor/js/pace.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Libs -->
+  <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+  <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="assets/vendor/libs/ladda/ladda.css">
+  <link rel="stylesheet" href="assets/vendor/libs/sweetalert2/sweetalert2.css">
+
+
+  <style>
+    .swiper-smartfit {
+      width: 100%;
+    }
+
+    .swiper-smartfit .swiper-slide {
+      background: #FFF;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #202020 !important;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #202020
+    }
+
+    body {
+      overflow-x: hidden;
+
+    }
+
+    .card-covid h5,
+    .card-covid p {
+      margin-bottom: 0;
+    }
+
+    #droz-div {
+      display: none;
+    }
+  </style>
+
+
+  <!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T67M7MR');</script><!-- End Google Tag Manager -->
+
+  <!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TCXTCQ5');</script><!-- End Google Tag Manager -->
+
+
+</head>
+
+<body class="light">
+<!-- <body class="dark"> -->
+
+  <!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T67M7MR"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->
+  
+  <!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCXTCQ5"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->
+
+  <div class="page-loader">
+    <div class="bg-primary"></div>
+  </div>
+
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-2">
+    <div class="layout-inner">
+
+      <!-- Layout container -->
+      <div class="layout-container bg-theme">
+
+        <!-- Layout navbar -->
+
+
+        <nav class="layout-navbar wow fadeInDown navbar navbar-expand-lg align-items-lg-center container-p-x "
+          data-wow-duration='0.5s' id="layout-navbar" style='border:0 !important;box-shadow: none !important;'>
+
+          <div class="container">
+
+            <a href="#" class="navbar-brand w-lg-100 text-large font-weight-bolder line-height-1 py-3 mr-0">
+
+              <!-- <img class='brand-img' src='./assets/img/logo.svg'> -->
+              <div class='brand-img'></div>
+
+            </a>
+
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".header-13">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="header-13 navbar-collapse collapse flex-shrink-0">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#Duvidas">DÚVIDAS FREQUENTES</a>
+                <a class="nav-item nav-link" href="#SAC">SAC</a>
+                
+              </div>
+            </div>
+
+          </div>
+
+          <!-- <div class="switcher-group">
+            <label class="switcher">
+              <input type="checkbox" class="switcher-input">
+              <span class="switcher-indicator">
+                <span class="switcher-yes"></span>
+                <span class="switcher-no"></span>
+              </span>
+              <span class="switcher-label">Modo noturno</span>
+            </label>
+          </div> -->
+        </nav>
+        <!-- / Layout navbar -->
+
+        <!-- Layout content -->
+        <div class="layout-content">
+
+          <!-- Banner Principal -->
+          <section class='padding-default'>
+       
+            <div class='container wow fadeIn' data-wow-duration='1s'>
+              <div class="d-flex flex-1 flex-row  flex-wrap-reverse justify-content-center align-items-center"
+                style='min-height:70vh;'>
+                <div class='col-12 col-md-6 d-block'>
+                  <div class='d-flex flex-1 flex-column p-0 m-0 justify-content-center text-center align-items-center'>
+
+                    <!-- <img width='95%' class='mt-5 mb-5' src='./assets/img/logo.svg'> -->
+                    <div id="motionLogo-light" class="animation"></div>
+                    <div id="motionLogo-dark" class="animation d-none"></div>
+
+                    <div>
+                      <a style="background-color: #484848; padding: 1rem 2rem; border-radius: 0.2rem; color: #FFF;" href='#Duvidas'><span>TIRE SUAS DÚVIDAS</span></a>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class='col-12 col-md-6 d-none-sm'>
+                  <div class='d-flex flex-1 flex-column justify-content-center align-items-center'>                    
+                    <div class="img-banner"></div>                    
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+
+          </section>
+
+          <!-- Dúvidas Frequentes -->
+          <section class="container flex-grow-1 container-p-y" id="Duvidas">
+
+
+            <h1 class="text-center font-weight-bold py-3 mb-4 wow fadeInDown" data-wow-duration="0.5s">
+              DÚVIDAS FREQUENTES
+            </h1>
+
+            <div class="card mb-3">
+
+              <div class="input-group" style="border: 1px solid white; padding: 10px; border-radius: 20px !important;">
+                <input  id="search-input" type="text" class="form-control" placeholder="Qual é sua dúvida?"
+                  style="border: none !important;">
+                <span class="input-group-append">
+                  <button id="search-bar" type="button" class="btn btn-primary" style="padding: 0.6rem; background-color: #484848; color: #FFF;font-size: 12px; text-transform: uppercase; border-radius: 5px;">Pesquisar</button>
+                </span>
+              </div>
+
+            </div>
+
+
+
+            <div class="row mt-4 ">
+              <div class="col-lg-4 col-xl-3">
+
+                <div class="sticky-top pt-3">
+
+                  <div class="categories-menu">
+                    <a href="javascript:void(0)" class="media align-items-center bg-lighter text-body py-3 px-4">
+                      <div class="ion ion-md-help-circle-outline ui-w-30 text-center text-xlarge"></div>
+                      <div class="media-body ml-3">
+                        Common
+                        <div class="text-muted small">Donec sagittis urna eu leo</div>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" class="media align-items-center bg-lighter text-body py-3 px-4">
+                      <div class="ion ion-ios-help-buoy ui-w-30 text-center text-xlarge"></div>
+                      <div class="media-body ml-3">
+                        Knowledge Base
+                        <div class="text-muted small">Donec sagittis urna eu leo</div>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" class="media align-items-center bg-lighter text-body py-3 px-4">
+                      <div class="ion ion-md-card ui-w-30 text-center text-xlarge"></div>
+                      <div class="media-body ml-3">
+                        Purchase
+                        <div class="text-muted small">Donec sagittis urna eu leo</div>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" class="media align-items-center bg-lighter text-body py-3 px-4">
+                      <div class="ion ion-ios-business ui-w-30 text-center text-xlarge"></div>
+                      <div class="media-body ml-3">
+                        Partnership
+                        <div class="text-muted small">Donec sagittis urna eu leo</div>
+                      </div>
+                    </a>
+                  </div>
+
+
+                </div>
+
+              </div>
+              <div class="col content-faq wow fadeInRight" data-wow-duration="1s">
+
+                <div class="media align-items-center my-4">
+
+                  <div class="media-body ml-1">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur felis
+                      lacus, fringilla eget dolor quis, lobortis ornare felis. Morbi semper ullamcorper efficitur.
+                      Cras
+                      mollis odio in dui pulvinar, ut bibendum justo ullamcorper.</p>
+                  </div>
+                </div>
+
+                <div class="bg-soft ui-bordered mb-2 ">
+                  <a href="#company-faq-1" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Ne ornatus albucius ius?
+                    <span class="collapse-icon"></span>
+                  </a>
+                  <div id="company-faq-1" class="collapse text-muted">
+                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, mea in pertinax hendrerit gloriatur.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="zdd" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Quo insolens intellegam dissentiet at?
+                    <span class="collapse-icon"></span>
+                  </a>
+                  <div id="company-faq-2" class="collapse text-muted">
+                    <div class="px-4 pb-3">Ex fugit legimus fuisset per. Ex quidam option diceret ius.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-3" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Ad his assum delenit blandit?
+                    <span class="collapse-icon"></span>
+                  </a>
+                  <div id="company-faq-3" class="collapse text-muted">
+                    <div class="px-4 pb-3">Ne ornatus albucius ius, nostrum dignissim repudiandae an usu.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-4" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Dapibus ac facilisis in?
+                    <span class="collapse-icon d-inline-block ml-1"></span>
+                  </a>
+                  <div id="company-faq-4" class="collapse text-muted">
+                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod
+                      consequat eu.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-5" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Cras justo odio?
+                    <span class="collapse-icon d-inline-block ml-1"></span>
+                  </a>
+                  <div id="company-faq-5" class="collapse text-muted">
+                    <div class="px-4 pb-3">Etiam vivendo eu sea, purto ponderum mediocritatem at pro.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-6" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Porta ac consectetur ac?
+                    <span class="collapse-icon d-inline-block ml-1"></span>
+                  </a>
+                  <div id="company-faq-6" class="collapse text-muted">
+                    <div class="px-4 pb-3">Iuvaret deleniti vulputate nec ne, id vix lucilius legendos deseruisse.
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-5">
+
+                <h4 class="media align-items-center mb-4">
+                  <div class="ion ion-ios-help-buoy ui-w-60 text-center text-large"></div>
+                  <div class="media-body ml-1">
+                    Knowledge Base
+                    <div class="text-muted text-tiny font-weight-light">Donec sagittis urna eu leo</div>
+                  </div>
+                </h4>
+
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-21" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Ne ornatus albucius ius?
+                    <span class="collapse-icon"></span>
+                  </a>
+                  <div id="company-faq-21" class="collapse text-muted">
+                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, mea in pertinax hendrerit gloriatur.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-22" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Quo insolens intellegam dissentiet at?
+                    <span class="collapse-icon"></span>
+                  </a>
+                  <div id="company-faq-22" class="collapse text-muted">
+                    <div class="px-4 pb-3">Ex fugit legimus fuisset per. Ex quidam option diceret ius.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-23" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Ad his assum delenit blandit?
+                    <span class="collapse-icon"></span>
+                  </a>
+                  <div id="company-faq-23" class="collapse text-muted">
+                    <div class="px-4 pb-3">Ne ornatus albucius ius, nostrum dignissim repudiandae an usu.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-24" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Dapibus ac facilisis in?
+                    <span class="collapse-icon d-inline-block ml-1"></span>
+                  </a>
+                  <div id="company-faq-24" class="collapse text-muted">
+                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod
+                      consequat eu.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-25" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Cras justo odio?
+                    <span class="collapse-icon d-inline-block ml-1"></span>
+                  </a>
+                  <div id="company-faq-25" class="collapse text-muted">
+                    <div class="px-4 pb-3">Etiam vivendo eu sea, purto ponderum mediocritatem at pro.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-26" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Porta ac consectetur ac?
+                    <span class="collapse-icon d-inline-block ml-1"></span>
+                  </a>
+                  <div id="company-faq-26" class="collapse text-muted">
+                    <div class="px-4 pb-3">Iuvaret deleniti vulputate nec ne, id vix lucilius legendos deseruisse.
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-5">
+
+                <h4 class="media align-items-center mb-4">
+                  <div class="ion ion-md-card ui-w-60 text-center text-large"></div>
+                  <div class="media-body ml-1">
+                    Purchase
+                    <div class="text-muted text-tiny font-weight-light">Donec sagittis urna eu leo</div>
+                  </div>
+                </h4>
+
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-31" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Ne ornatus albucius ius?
+                    <span class="collapse-icon"></span>
+                  </a>
+                  <div id="company-faq-31" class="collapse text-muted">
+                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, mea in pertinax hendrerit gloriatur.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-32" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Quo insolens intellegam dissentiet at?
+                    <span class="collapse-icon"></span>
+                  </a>
+                  <div id="company-faq-32" class="collapse text-muted">
+                    <div class="px-4 pb-3">Ex fugit legimus fuisset per. Ex quidam option diceret ius.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-33" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Ad his assum delenit blandit?
+                    <span class="collapse-icon"></span>
+                  </a>
+                  <div id="company-faq-33" class="collapse text-muted">
+                    <div class="px-4 pb-3">Ne ornatus albucius ius, nostrum dignissim repudiandae an usu.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-34" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Dapibus ac facilisis in?
+                    <span class="collapse-icon d-inline-block ml-1"></span>
+                  </a>
+                  <div id="company-faq-34" class="collapse text-muted">
+                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod
+                      consequat eu.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-35" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Cras justo odio?
+                    <span class="collapse-icon d-inline-block ml-1"></span>
+                  </a>
+                  <div id="company-faq-35" class="collapse text-muted">
+                    <div class="px-4 pb-3">Etiam vivendo eu sea, purto ponderum mediocritatem at pro.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-36" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Porta ac consectetur ac?
+                    <span class="collapse-icon d-inline-block ml-1"></span>
+                  </a>
+                  <div id="company-faq-36" class="collapse text-muted">
+                    <div class="px-4 pb-3">Iuvaret deleniti vulputate nec ne, id vix lucilius legendos deseruisse.
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-5">
+
+                <h4 class="media align-items-center mb-4">
+                  <div class="ion ion-ios-business ui-w-60 text-center text-large"></div>
+                  <div class="media-body ml-1">
+                    Partnership
+                    <div class="text-muted text-tiny font-weight-light">Donec sagittis urna eu leo</div>
+                  </div>
+                </h4>
+
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-41" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Ne ornatus albucius ius?
+                    <span class="collapse-icon"></span>
+                  </a>
+                  <div id="company-faq-41" class="collapse text-muted">
+                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, mea in pertinax hendrerit gloriatur.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-42" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Quo insolens intellegam dissentiet at?
+                    <span class="collapse-icon"></span>
+                  </a>
+                  <div id="company-faq-42" class="collapse text-muted">
+                    <div class="px-4 pb-3">Ex fugit legimus fuisset per. Ex quidam option diceret ius.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-43" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Ad his assum delenit blandit?
+                    <span class="collapse-icon"></span>
+                  </a>
+                  <div id="company-faq-43" class="collapse text-muted">
+                    <div class="px-4 pb-3">Ne ornatus albucius ius, nostrum dignissim repudiandae an usu.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-44" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Dapibus ac facilisis in?
+                    <span class="collapse-icon d-inline-block ml-1"></span>
+                  </a>
+                  <div id="company-faq-44" class="collapse text-muted">
+                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod
+                      consequat eu.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-45" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Cras justo odio?
+                    <span class="collapse-icon d-inline-block ml-1"></span>
+                  </a>
+                  <div id="company-faq-45" class="collapse text-muted">
+                    <div class="px-4 pb-3">Etiam vivendo eu sea, purto ponderum mediocritatem at pro.</div>
+                  </div>
+                </div>
+                <div class="bg-soft ui-bordered mb-2">
+                  <a href="#company-faq-46" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
+                    Porta ac consectetur ac?
+                    <span class="collapse-icon d-inline-block ml-1"></span>
+                  </a>
+                  <div id="company-faq-46" class="collapse text-muted">
+                    <div class="px-4 pb-3">Iuvaret deleniti vulputate nec ne, id vix lucilius legendos deseruisse.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+                  
+
+            </div>
+
+            <div class="row mt-4">              
+              <div class="col-12">
+                  <div class="container">
+                    <p class="m-auto text-center">*Os benefícios wifi, bioimpedância, Just&Você e trancamento de férias não estarão mais disponíveis a partir da data de migração.</p>
+                  </div>
+              </div>
+            </div>
+
+          </section>
+
+          <!-- Fale Conosco -->
+          <section class="container flex-grow-1 container-p-y" id="SAC">
+            <div class="row padding-default-bottom-top-dif">
+              <div class='col-12 col-lg-6 d-block' style="padding: 20px !important;">
+
+                <div style="width: 100%; height: 100%;" class="wow fadeInLeft" data-wow-duration="1s">
+                  <img src="./assets/img/just-bg-contact-form.png" style="width: 100%;">
+                </div>
+
+              </div>
+              <div class='col-12 col-lg-6 d-lg-block wow fadeInRight' data-wow-duration="1s">
+                <h1 class="display-4 "><strong>Fale conosco</strong></h1>
+
+                <div class="lead text-muted pt-4 pb-3">
+                  Entre em contato conosco preenchendo os campos abaixo
+                </div>
+
+                <form id="validation-form-1" action=''>
+                  <div class="form-group">
+                    <input type="text" style="border-radius: 20px !important;" class="form-control nome form-adjust" name="validation-name"
+                      placeholder="Nome completo">
+                  </div>
+                  <div class="form-group">
+                    <input type="tel"  class="form-control cpf form-adjust" name="validation-cpf" placeholder="CPF"
+                      style="border: 1px solid #D1D1D1; border-radius: 20px !important; padding: 10px; border-radius: 0px;padding: 25px;">
+                  </div>
+
+                  <div class="form-group">
+                    <input type="email" style="border-radius: 20px !important;" class="form-control form-adjust" name="validation-email" placeholder="Email">
+                  </div>
+
+                  <div class="form-group">
+                    <input type="tel"  style="border-radius: 20px !important;" class="form-control form-adjust phone_with_ddd" name="validation-phone"
+                      placeholder="Celular">
+                  </div>
+
+                  <div class="form-group">              
+
+                    <select id="unidade" style="border-radius: 20px !important;" class="custom-select custom-select-lg form-adjust" title="Qual a unidade?" name="validation-unidade">
+                      <option>Qual a unidade?</option>
+                      <option>One</option>
+                      <option>Two</option>
+                      <option>Three</option>
+                    </select>
+
+                  </div>
+                  <div class="form-group">                    
+
+                    <select style="border-radius: 20px !important;" class="custom-select custom-select-lg form-adjust" title="Já é aluno?" name="validation-aluno">
+                      <option value="">Já é aluno?</option>
+                      <option>Sim</option>
+                      <option>Não</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">                    
+
+                    <select style="border-radius: 20px !important;" class="custom-select custom-select-lg form-adjust" title="Qual o assunto?" name="validation-subject">
+                      <option value="">Qual o assunto?</option>                      
+                      <option value="Coronavírus">Coronavírus</option>
+                      <option value="Financeiro">Financeiro</option>
+                      <option value="Atendimento">Atendimento</option>
+                      <option value="Manutenção">Manutenção</option>
+                      <option value="Sugestões">Sugestões</option>
+                      <option value="Outros">Outros</option>                      
+                    </select>
+
+                  </div>
+
+
+
+                  <div class="form-group">
+                    <textarea style="border-radius: 20px !important;" draggable="false" id="input-message" name="validation-message" class="form-adjust" cols="30" rows="7"
+                      class="form-control messagem" placeholder="Mensagem"
+                      style="border: 1px solid #D1D1D1; padding: 10px; border-radius: 0px;padding: 15px; resize: none;"></textarea>
+                  </div>
+
+
+
+                  <div class="d-flex justify-content-end align-items-end">
+                    <span class="input-group-append">
+                      <button id="submitForm" type="button"style="background-color: #484848; padding: 1rem 4rem;text-transform: uppercase; border-radius: 0.2rem; color: #FFF; border: 0"  data-style="expand-right">Enviar</button>
+                    </span>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
+          </section>
+
+          <!-- Footer -->
+          <footer class="text-center text-white" style="display: flex; align-items: center; justify-content: center; min-height:400px; background-color: #FAFAFA;">
+          
+            <img src="./assets/img/logo-just.png" width="120px" alt="">
+
+          </footer>
+          <!-- Footer -->
+
+          <!-- Uploader -->
+          <section class="d-none">
+            <input type="file" id="fileUploader" name="fileUploader" accept=".xls, .xlsx"/>
+            <label id="jsonObject"> JSON : </label>
+          </section>
+
+        </div>
+        <!-- Layout content -->
+
+      </div>
+      <!-- / Layout container -->
+
+    </div>
+
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-sidenav-toggle"></div>
+  </div>
+  <!-- / Layout wrapper -->
+
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner d-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <p>Nós utilizamos cookies para personalizar anúncios e melhorar a sua experiência no site. Ao continuar navegando, você concorda com a nossa política de privacidade.</p>
+        </div>
+        <div class="col-md-2 group-buttons">
+          <button id="btn-cookie-banner" class="btn btn-cta">Ok</button>
+          <a href="https://www.smartfit.com.br/contratos" target="_blank" rel="noopenner noreferrer">Saiba Mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core scripts -->
+  <script src="assets/vendor/libs/popper/popper.js"></script>
+  <script src="assets/vendor/js/bootstrap.js"></script>
+  <script src="assets/vendor/js/sidenav.js"></script>
+
+  <!-- Libs -->
+  <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="assets/vendor/libs/swiper/swiper.js"></script>
+  <script src="assets/vendor/libs/validate/validate.js"></script>
+  <script src="assets/vendor/libs/spin/spin.js"></script>
+  <script src="assets/vendor/libs/ladda/ladda.js"></script>
+  <script src="assets/vendor/libs/sweetalert2/sweetalert2.js"></script>
+    
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+  <!-- Demo -->
+  <script src="assets/js/demo.js"></script>
+  <script src="assets/js/forms_validation.js"></script>
+  <script src="assets/js/jquery.mask.min.js"></script>
+
+
+  <script src="assets/js/wow.min.js"></script>
+
+
+  <script>
+    new WOW().init();
+  </script>
+
+  <!-- Animations -->
+  <script src="assets/vendor/js/animation.js"></script>
+  <script>
+    var logo = document.getElementById('motionLogo-light');
+    var animationLogo = lottie.loadAnimation({
+      container: logo,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 90 720 720'
+      },
+      path: 'assets/animation/light/data.json'
+    });
+    
+    var logoDark = document.getElementById('motionLogo-dark');
+    var animationLogoDark = lottie.loadAnimation({
+      container: logoDark,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 90 720 720'
+      },      
+      path: 'assets/animation/dark/data.json'      
+    });
+
+    var covid1 = document.getElementById('animation-covid-1');
+    var animationCovid1 = lottie.loadAnimation({
+      container: covid1,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 180 720 720'
+      },
+      path: 'assets/animation/covid/1/data.json'
+      //path: 'assets/animation/covid/2/data.json'
+      //path: 'assets/animation/covid/3/data.json'
+      //path: 'assets/animation/covid/4/data.json'
+      //path: 'assets/animation/covid/5/data.json'
+      //path: 'assets/animation/covid/6/data.json'
+    });
+
+    var covid2 = document.getElementById('animation-covid-2');
+    var animationCovid2 = lottie.loadAnimation({
+      container: covid2,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 180 720 720'
+      },
+      path: 'assets/animation/covid/2/data.json'
+      //path: 'assets/animation/covid/3/data.json'
+      //path: 'assets/animation/covid/4/data.json'
+      //path: 'assets/animation/covid/5/data.json'
+      //path: 'assets/animation/covid/6/data.json'
+    });
+
+    var covid3 = document.getElementById('animation-covid-3');
+    var animationCovid3 = lottie.loadAnimation({
+      container: covid3,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 180 720 720'
+      },
+      path: 'assets/animation/covid/3/data.json'
+      //path: 'assets/animation/covid/4/data.json'
+      //path: 'assets/animation/covid/5/data.json'
+      //path: 'assets/animation/covid/6/data.json'
+    });
+
+    var covid4 = document.getElementById('animation-covid-4');
+    var animationCovid4 = lottie.loadAnimation({
+      container: covid4,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 180 720 720'
+      },
+      path: 'assets/animation/covid/4/data.json'
+      //path: 'assets/animation/covid/5/data.json'
+      //path: 'assets/animation/covid/6/data.json'
+    });
+
+    var covid5 = document.getElementById('animation-covid-5');
+    var animationCovid5 = lottie.loadAnimation({
+      container: covid5,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 180 720 720'
+      },
+      path: 'assets/animation/covid/5/data.json'
+      //path: 'assets/animation/covid/6/data.json'
+    });
+
+    var covid6 = document.getElementById('animation-covid-6');
+    var animationCovid6 = lottie.loadAnimation({
+      container: covid6,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 180 720 720'
+      },
+      path: 'assets/animation/covid/6/data.json'
+    });
+
+
+  </script>
+
+
+  <!-- Swiper Things -->
+  <script>
+    var swiperMultipleSlides = new Swiper('#swiper-multiple-slides', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".button-next",
+        prevEl: ".button-prev",
+      },
+      breakpoints: {
+
+        468: {
+          slidesPerView: 1.1,
+          centeredSlides: true,
+          spaceBetween: 20,
+        },
+        640: {
+          centeredSlides: true,
+          slidesPerView: 1.1,
+          spaceBetween: 20,
+        },
+        768: {
+          centeredSlides: true,
+          slidesPerView: 2.1,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1200: {
+          slidesPerView: 3.5,
+          spaceBetween: 30,
+        },
+
+      },
+    });
+
+
+
+    var swiperSmart = new Swiper('.swiper-smartfit', {
+      slidesPerView: 1.1,
+      spaceBetween: 10,
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   clickable: true
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1.2,
+          spaceBetween: 10,
+        },
+        468: {
+          slidesPerView: 1.3,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 1.2,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 2.4,
+          spaceBetween: 10,
+        },
+        1366: {
+          slidesPerView: 2.4,
+          spaceBetween: 10,
+        },
+        1566: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+      },
+    });
+  </script>
+
+
+  <!-- Input Mask -->
+  <script>
+    $(document).ready(function () {
+      $('.phone_with_ddd').mask('(00) 00000-0000');
+      $('.cpf').mask('000.000.000-00', { reverse: true });
+      $('.nome').mask('Z', { translation: { 'Z': { pattern: /[a-zA-Z ]/, recursive: true } } });
+    });
+
+
+  </script>
+
+
+  <!-- Dark mode settings -->
+  <script>
+
+    $(document).ready(function () {
+
+
+      function changeMode( option ){
+        if( option ) {          
+          $("body").removeClass("light");
+          $("body").addClass("dark");
+          
+          $("#motionLogo-dark").removeClass("d-none");
+          $("#motionLogo-light").addClass("d-none");
+          
+          
+        } else {          
+          $("body").removeClass("dark");
+          $("body").addClass("light");
+
+          $("#motionLogo-light").removeClass("d-none");
+          $("#motionLogo-dark").addClass("d-none");
+        }
+      }
+
+      //Verify Hour
+      var date = new Date;      
+      var hour = date.getHours();      
+
+      if(hour >= 6 && hour < 18){        
+        // changeMode(false);        
+      } else{
+        // $( ".switcher-input" ).trigger("click"); 
+        // changeMode(true);  
+      }
+
+      $( ".switcher-input" ).change(function(e) {
+        console.log( $(e.target) );        
+        if( $(e.target).is(':checked') ) {
+          changeMode(true);          
+        } else {
+          changeMode(false);
+        }
+      });
+
+      if($( window ).width() <= 768){
+        $( "button.navbar-toggler" ).click(function() {     
+        
+          if( $( this ).hasClass( "collapsed" ) ) {            
+            $( ".switcher-group" ).css( "display", "block" );            
+          } else {
+            $( ".switcher-group" ).css( "display", "none" );                 
+          }
+          
+        });
+      }
+      
+    });
+
+  </script>
+
+
+  <!-- Form Settings -->
+  <script>
+
+    $(document).ready(function () {
+
+      Ladda.bind( '.ladda-button', { timeout: 2000 } );
+
+
+      $("#unidade").empty();
+      $.ajax({
+		    type: "GET",
+		    url: "https://api.fale.justfit.com.br/unidades",
+		    // data: a,
+		    cache: !1,
+		    beforeSend: function() {
+		        // $("#alert-loading").modal("show");
+		    },
+		    success: function(unidades) {
+          // $("#alert-loading").modal("hide");
+          // console.log(unidades);				
+          $('#unidade').append(`<option value="">Qual unidade?</option>`);
+
+          unidades.forEach(function (item, index){			
+            if(item.email == "morumbi@justfit.com.br" || item.nome == "VERTENTES MORUMBI"){						
+              unidades[index].nome = "MORUMBI";
+            }					
+          });
+
+          unidades.sort(function(a, b){
+            if(a.nome < b.nome) { return -1; }
+            if(a.nome > b.nome) { return 1; }
+            return 0;
+          })				
+
+          unidades.forEach(function (item, index){								
+            $('#unidade').append(`<option data-email=${item.email} value=${item.id}>${item.nome}</option>`);
+          });
+				
+        },
+        error: function(error){
+          console.log(error);
+        }
+		  })
+
+
+      $( "#submitForm" ).click(function() {
+         if( $("#validation-form-1").valid() ) {
+
+
+          var $form = $("#validation-form-1");
+			    var dataForm = getFormData($form);
+
+          console.log(dataForm);          
+
+          var dataEmail = {
+            email: dataForm['validation-email'],
+            cpf: dataForm['validation-cpf'],
+            nome: dataForm['validation-name'],
+            telefone: dataForm['validation-phone'],
+            messagem: dataForm['validation-message'],
+            id_unidade: dataForm['validation-unidade'],
+            aluno: dataForm['validation-aluno'],
+            assunto: dataForm['validation-subject']				
+          }
+
+          $.ajax({
+            type: "POST",
+            url: "https://api.fale.justfit.com.br/solicitacoes",            
+            dataType: 'json',
+            contentType: 'application/json',
+            data: JSON.stringify(dataEmail),
+            cache: !1,
+            beforeSend: function() {
+              // $("#alert-loading").modal("show");
+            },
+            success: function(response) {
+              // $("#alert-loading").modal("hide");
+              console.log("success");
+              console.log(response);
+              $('#submitContato').prop('disabled', false);
+
+
+              if(response.error){
+                console.log("yes error");
+                $("#msgError").html(response.error)
+                $('#openModalError').trigger('click');		
+
+                Swal.fire({
+                  title: 'Erro ao enviar contato', 
+                  text: response.error,
+                  icon: 'error',
+                  showCancelButton: false,
+                  customClass: {
+                    confirmButton: 'btn btn-danger btn-lg'                    
+                  }
+                });
+                // return false													
+              } else {	
+
+                Swal.fire({
+                  title: 'Contato enviado com sucesso', 
+                  text: 'Sua solicitação foi aberta com sucesso',
+                  icon: 'success',
+                  showCancelButton: false,
+                  customClass: {
+                    confirmButton: 'btn btn-success btn-lg'                    
+                  }
+                });
+                
+                $("form").find("input, textarea").val("");		
+                
+                		
+              }                            
+              
+            },
+            error: function(response){
+              console.log("error");
+              console.log(response);
+              var msgError = 'Tente novamente mais tarde';
+              if(response.responseJSON.error){
+                msgError = response.responseJSON.error
+              }
+              Swal.fire({
+                  title: 'Erro ao enviar contato', 
+                  text: msgError,
+                  icon: 'error',
+                  showCancelButton: false,
+                  customClass: {
+                    confirmButton: 'btn btn-danger btn-lg'                   
+                  }
+              });
+            }
+          })
+           
+         }
+      });
+
+
+      function getFormData($form){
+        var unindexed_array = $form.serializeArray();
+        var indexed_array = {};
+
+        $.map(unindexed_array, function(n, i){
+          indexed_array[n['name']] = n['value'];
+        });
+
+        return indexed_array;
+      }
+
+    });
+    
+  </script>
+
+
+  <!-- Faq Populate / Search -->
+  <script>
+
+    $(document).ready(function(){
+
+      getDataFaq();
+
+      $( "#search-bar" ).click(function() {
+
+        let term = $( "#search-input" ).val();
+        
+        console.log( term );   
+                
+        renderSearch( term );        
+
+      } );
+      
+      $('#search-input').keyup(function(e){
+          if(e.keyCode == 13)
+          {
+              renderSearch( $( "#search-input" ).val() );   
+          }
+      });
+
+    });
+    
+
+    function getDataFaq(){
+      $.ajax({
+		    type: "GET",		    
+        //url: "https://assets.wigoo.com.br/smartfit/assets/json/faq.json",
+        url: "assets/json/faq.json",
+		    // data: a,
+		    cache: !1,
+		    beforeSend: function() {		      
+          console.log("loading");
+		    },
+		    success: function(data) {          
+          console.log("success");
+          
+          // console.log( JSON.parse(data) );	
+          // populateFaq( JSON.parse(data) );	
+          
+          console.log( data );	
+          populateFaq( data );
+
+          localStorage.setItem('faq-questions', JSON.stringify(data));
+          
+          
+          
+        },
+        error: function(error){
+          console.log("error");
+          console.log(error);
+        }
+		  })
+    }
+
+    function populateFaq(data){
+      
+      
+      var result = data.reduce(function (r, a) {
+          r[a.Setor] = r[a.Setor] || [];
+          r[a.Setor].push(a);
+          return r;
+      }, Object.create(null));
+
+      console.log(result);
+
+      $(".categories-menu").html('');
+      $(".content-faq").html('');
+      Object.keys(result).map(function(item) {        
+        if(item != "Setor"){
+          $(".categories-menu").append(`
+              <a href="javascript:renderCategory('${item}', true)" class="category-item media align-items-center bg-lighter text-body py-3 px-4">
+                <div class="ion ion-md-help-circle-outline ui-w-30 text-center text-xlarge"></div>
+                <div class="media-body ml-3">
+                  ${item}                  
+                </div>
+              </a>
+          `);
+
+          $(".content-faq").append(`
+            <div id="${item}-faq" class="media align-items-center my-4">
+              <div class="media-body ml-1">
+                <h4>${item}</h4>
+              </div>
+            </div>
+          `);
+
+          result[item].map(function(subitem) {
+
+            $(".content-faq").append(`
+              <div class="bg-soft ui-bordered mb-2 ">
+                <a href="#question-${subitem.ID}" class="d-flex justify-content-between text-body py-3 px-4"
+                  data-toggle="collapse">
+                  ${subitem.Pergunta}
+                  <span class="collapse-icon"></span>
+                </a>
+                <div id="question-${subitem.ID}" class="collapse text-muted">
+                  <div class="px-4 pb-3">
+                    ${subitem.Resposta}
+                  </div>
+                </div>
+              </div>
+            `);
+
+          });          
+
+          $(".content-faq").append(`
+            <hr class="my-5">
+         `);
+        }        
+      });
+
+      
+      setTimeout(function(){ renderCategory("App"); }, 1000);
+
+    }
+
+    function renderContentFaq(data) {
+
+      var result = data.reduce(function (r, a) {
+          r[a.Setor] = r[a.Setor] || [];
+          r[a.Setor].push(a);
+          return r;
+      }, Object.create(null));
+
+      $(".content-faq").html('');
+      Object.keys(result).map(function(item) {        
+        if(item != "Setor"){
+
+
+          $(".content-faq").append(`
+            <div id="${item}-faq" class="media align-items-center my-4">
+              <div class="media-body ml-1">
+                <h4>${item}</h4>
+              </div>
+            </div>
+          `);
+
+          result[item].map(function(subitem) {
+
+            $(".content-faq").append(`
+              <div class="bg-soft ui-bordered mb-2 ">
+                <a href="#question-${subitem.ID}" class="d-flex justify-content-between text-body py-3 px-4"
+                  data-toggle="collapse">
+                  ${subitem.Pergunta}
+                  <span class="collapse-icon"></span>
+                </a>
+                <div id="question-${subitem.ID}" class="collapse text-muted">
+                  <div class="px-4 pb-3">
+                    ${subitem.Resposta}
+                  </div>
+                </div>
+              </div>
+            `);
+
+          });          
+
+          $(".content-faq").append(`
+            <hr class="my-5">
+         `);
+        }        
+      });
+
+    }
+    
+    function renderSearch(term){
+      let data = JSON.parse( localStorage.getItem('faq-questions') );
+      
+      if( term != ""){
+        data = data.filter(item => item.Tags.includes( capitalizeFirstLetter(term) ) || item.Pergunta.includes( term ) || item.Pergunta.includes( capitalizeFirstLetter(term) ) || item.Pergunta.includes( term.toUpperCase() ) || item.Pergunta.includes( term.toLowerCase() ) || item.Resposta.includes( term ) || item.Resposta.includes( capitalizeFirstLetter(term) ) || item.Resposta.includes( term.toUpperCase() ) || item.Resposta.includes( term.toLowerCase() )   );
+        console.log(data);
+      }
+
+      renderContentFaq( data );
+
+      setTimeout(function(){ 
+          $("html, body").animate({ scrollTop: $('.content-faq').offset().top }, 1000);
+      }, 300);
+
+
+    }
+
+    function renderCategory(term, scroll){
+
+      
+
+      let data = JSON.parse( localStorage.getItem('faq-questions') );
+      
+      if( term != ""){
+        data = data.filter(item => item.Setor.includes( term));
+        console.log(data);
+      }
+
+      renderContentFaq( data );      
+
+      if( scroll ){
+        setTimeout(function(){ 
+          $("html, body").animate({ scrollTop: $('.content-faq').offset().top }, 1000);
+        }, 300);
+      }
+
+    }
+
+    function capitalizeFirstLetter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+
+  </script>
+
+  <!-- Cookie Banner -->
+  <script>
+
+    $(document).ready(function(){
+      var viewCookieBanner = localStorage.getItem("cookie-banner");
+
+      if(!viewCookieBanner){
+        $( ".cookie-banner" ).removeClass("d-none");
+      }
+
+      $( "#btn-cookie-banner" ).click(function() {
+        localStorage.setItem("cookie-banner", true);
+        $( ".cookie-banner" ).addClass("d-none");
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
